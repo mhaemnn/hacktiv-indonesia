@@ -1,29 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio Responsif</title>
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <!-- font roboto google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- icon bars-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <title>portfolio</title>
 </head>
 <body>
-	<nav class="navbar">
-    <div class="logo">
-      <a href="#">Servonsip</a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#">Beranda</a></li>
-      <li><a href="#">Layanan</a></li>
-      <li><a href="#">Tentang Kami</a></li>
-      <li><a href="#">Kontak</a></li>
+  <div class="container">
+    <!-- sidebar -->
+  <input type="checkbox" id="check">
+  <div class="sidebar">
+    <ul>
+      <li><a href="#home">about</a></li>
+      <li><a href="#product">product</a></li>
+      <li><a href="#galery">gallery</a></li>
+      <li><a href="#blod">blog</a></li>
+      <li><a href="#intentory">intentory</a></li>
     </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
+  </div>
+  <!-- header -->
+  <header>
+   <section>
+    <img src="/img/planet-earth.png" alt="">
+    <ul>
+      <li><a href="#home">about</a></li>
+      <li><a href="#product">product</a></li>
+      <li><a href="#galery">gallery</a></li>
+      <li><a href="#blod">blog</a></li>
+      <li><a href="#intentory">intentory</a></li>
+    </ul>
+
+    <!-- menu mobile -->
+    <label for="check" class="menu-mobile"><i class="fa-solid fa-bars fa-2x"></i></label>
+   </section>
+  </header>
+
+
+   <!-- biodata -->
+   <div class="biodata">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="/img/man.png" alt="">
+        <h3>Muhaemin</h3>
+        <span>Frond End Developer</span>
+      </div>
+      <div class="col-sm-6">
+        <table>
+          <tr>
+            <th>Nama</th>
+            <td>Jane Doe</td>
+          </tr>
+          <tr>
+            <th>Alamat</th>
+            <td>Jl. Pahlawan No.123</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>jane.doe@example.com</td>
+          </tr>
+          <tr>
+            <th>No. Telepon</th>
+            <td>08123456789</td>
+          </tr>
+        </table>
+      </div>
+     </div>
     </div>
-  </nav>
-  
-  <!-- script js -->
-  <script src="/js/script.js"></script>
+
+  </div>
+
+ 
+<!-- script js -->
+<script src="/js/script.js"></script>
+
 </body>
 </html>
