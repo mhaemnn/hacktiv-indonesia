@@ -1,46 +1,88 @@
-body{
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.navbar{
-  overflow: hidden;
-  background-color: #40E0D0;
-}
-.navbar  a{
-  float: right;
-  display: block;
-  color: rgb(41, 39, 39);
-  text-align: center;
-  padding: 16px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  text-transform: capitalize;
-}
-.navbar a:hover{
-  background-color: white;
-  font-weight: bold;
-  color: black;
-}
-.navbar a:active{
-  background-color: red;
-  color: white;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.navbar .icon{
-  display: none;
+body {
+	font-family: sans-serif;
+	background-color: #f2f2f2;
 }
 
-/* responsiv nav */
-@media screen and (max-width: 600px) {
-  .navbar responsive {position: relative;}
-  .navbar.responsiv.icon{
-  position: absolute;
-  right: 0;
-  top: 0;
-  }
-  .navbar.navbar.responsiv a{
-    float: none;
-    display: block;
-    text-align: right;
-  }
+header {
+	background-color: #333;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	padding: 0 20px;
+	color: #fff;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 0 20px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px #ccc;
+}
+
+.container h1 {
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+}
+
+th {
+	width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+
+	nav {
+		flex-direction: column;
+		height: auto;
+		padding: 20px;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav ul li {
+		margin: 10px 0;
+	}
+
+	.container {
+		margin: 30px 20px;
+	}
+
 }
