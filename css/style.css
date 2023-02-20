@@ -1,9 +1,8 @@
-
 @font-face {
-  font-family: "Roboto-Thin" ;
+  font-family: "Roboto-Thin";
   /* https://www.fontsquirrel.com/fonts/roboto */
-  src: url(/fonts/Roboto-Regular.ttf) format('truetype');
+  src: url(/fonts/Roboto-Regular.ttf) format("truetype");
 }
-*{
+* {
   font-family: Roboto-Thin;
 }
