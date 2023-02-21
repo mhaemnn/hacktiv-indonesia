@@ -6,3 +6,11 @@
 * {
   font-family: Roboto-Thin;
 }
+.container-sm img{
+  float: left;
+  width: 100px;
+  margin-top: 20px;
+}
+.container-sm table{
+  margin-top: 20px;
+}
