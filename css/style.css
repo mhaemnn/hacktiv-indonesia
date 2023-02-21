@@ -1,16 +1,33 @@
 @font-face {
   font-family: "Roboto-Thin";
-  /* https://www.fontsquirrel.com/fonts/roboto */
   src: url(/fonts/Roboto-Regular.ttf) format("truetype");
 }
 * {
   font-family: Roboto-Thin;
 }
 .container-sm img{
+  margin-right: 20px;
   float: left;
   width: 100px;
+
+}
+.container-sm .jumbotron {
   margin-top: 20px;
+
+}
+.container-sm .jumbotron button{
+  border: 1px;
+  border-radius:5px;
+  background-color: #4eec04;
+  color: white;
 }
 .container-sm table{
   margin-top: 20px;
 }
+
+.container-sm section{
+  margin-top: 30px;
+  border-radius: 3px;
+}
+
+@media (max-width: 767.98px) { .border-sm-start-none { border-left: none !important; } }
