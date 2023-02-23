@@ -6,7 +6,7 @@
   font-family: Roboto-Thin;
 }
 .container {
-  padding: 10px;
+  padding: 35px;
   box-shadow: 1px 1px 4px 2px gray;
   width: auto;
   height: 200px;
@@ -16,13 +16,27 @@
   float: left;
   width: 50%;
 }
+
+.kanan {
+  float: right;
+  width: 50%;
+}
 .kiri img {
   width: 100px;
   float: left;
   margin-right: 20px;
 }
+/* .kanan table {
+  table-layout: auto;
+} */
 
-.kanan {
-  float: right;
-  width: 50%;
+@media (min-width: 992px) {
+  .body {
+    width: 970px;
+  }
+}
+@media (max-width: 768px) {
+  .body {
+    width: 750px;
+  }
 }
