@@ -5,11 +5,14 @@
 * {
   font-family: Roboto-Thin;
 }
+.navbar {
+  box-shadow: 1px 1px 5px 1px gray;
+}
 .container {
-  padding: 35px;
+  padding: 30px;
   box-shadow: 1px 1px 4px 2px gray;
   width: auto;
-  height: 200px;
+  height: 260px;
   margin-top: 20px;
 }
 .kiri {
@@ -29,14 +32,3 @@
 /* .kanan table {
   table-layout: auto;
 } */
-
-@media (min-width: 992px) {
-  .body {
-    width: 970px;
-  }
-}
-@media (max-width: 768px) {
-  .body {
-    width: 750px;
-  }
-}
