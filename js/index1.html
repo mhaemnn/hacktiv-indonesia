@@ -14,83 +14,76 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="navbar"></div>
-      <div class="main">
-        <div class="heroimg"></div>
-        <div class="dataDiri">
-          <form action="">
-            <fieldset>
-              <legend>
-                <h2>From Data Diri</h2>
-              </legend>
-              <table>
-                <tr>
-                  <td><label for="name">Nama</label></td>
-                  <td>:</td>
-                  <td><input type="text" /></td>
-                </tr>
-                <tr>
-                  <td><label for="tgl">Tempat/Tanggal Lahir</label></td>
-                  <td>:</td>
-                  <td><input type="text" /> <input type="date" /></td>
-                </tr>
-                <tr>
-                  <td><label for="agama">Agama</label></td>
-                  <td>:</td>
-                  <td>
-                    <select name="agama">
-                      <option value="islam">Islam</option>
-                      <option value="hindu">Hindu</option>
-                      <option value="katolik">Katolik</option>
-                      <option value="Kristen">Kristen</option>
-                      <option value="budha">Budha</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td><label for="alamat">Alamat</label></td>
-                  <td>:</td>
-                  <td>
-                    <textarea name="" cols="30" rows="5"></textarea>
-                  </td>
-                </tr>
-                <tr>
-                  <td><label for="tlpn">No Telp/Hp</label></td>
-                  <td>:</td>
-                  <td><input type="number" placeholder="+62" /></td>
-                </tr>
-                <tr>
-                  <td><label for="jk">Jenis Kelamin</label></td>
-                  <td>:</td>
-                  <td>
-                    <input type="radio" />Laki-laki <input type="radio" />Wanita
-                  </td>
-                </tr>
-                <tr>
-                  <td><label for="hobi">Hobi</label></td>
-                  <td>:</td>
-                  <td>
-                    <input type="checkbox" />Ngoding
-                    <input type="checkbox" />Membaca
-                    <input type="checkbox" />Menulis
-                  </td>
-                </tr>
-                <tr>
-                  <td><label for="dataDiri">Pas Foto</label></td>
-                  <td>:</td>
-                  <td><input type="file" /></td>
-                </tr>
-                <tr>
-                  <td><input type="submit" /></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </table>
-            </fieldset>
-          </form>
-        </div>
+      <div class="dataDiri">
+        <form action="">
+          <fieldset>
+            <legend>
+              <h2>From Data Diri</h2>
+            </legend>
+            <table>
+              <tr>
+                <td><label for="name">Nama</label></td>
+                <td>:</td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td><label for="tgl">Tempat/Tanggal Lahir</label></td>
+                <td>:</td>
+                <td><input type="text" /> <input type="date" /></td>
+              </tr>
+              <tr>
+                <td><label for="agama">Agama</label></td>
+                <td>:</td>
+                <td>
+                  <select name="agama">
+                    <option value="islam">Islam</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="budha">Budha</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td>:</td>
+                <td>
+                  <textarea name="" cols="30" rows="3"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="tlpn">No Telp/Hp</label></td>
+                <td>:</td>
+                <td><input type="tel" pattern="^\d{10}$" required /></td>
+              </tr>
+              <tr>
+                <td><label for="jk">Jenis Kelamin</label></td>
+                <td>:</td>
+                <td>
+                  <input type="radio" />Laki-laki <input type="radio" />Wanita
+                </td>
+              </tr>
+              <tr>
+                <td><label for="hobi">Hobi</label></td>
+                <td>:</td>
+                <td>
+                  <input type="checkbox" />Ngoding
+                  <input type="checkbox" />Membaca
+                  <input type="checkbox" />Menulis
+                </td>
+              </tr>
+              <tr>
+                <td><label for="dataDiri">Pas Foto</label></td>
+                <td>:</td>
+                <td><input type="file" /></td>
+              </tr>
+              <tr>
+                <td><input type="submit" /></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
       </div>
-    </div>
-  </body>
 </html>
