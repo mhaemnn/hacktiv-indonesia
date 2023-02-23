@@ -5,30 +5,24 @@
 * {
   font-family: Roboto-Thin;
 }
-.container-sm img{
-  margin-right: 20px;
+.container {
+  padding: 10px;
+  box-shadow: 1px 1px 4px 2px gray;
+  width: auto;
+  height: 200px;
+  margin-top: 20px;
+}
+.kiri {
   float: left;
+  width: 50%;
+}
+.kiri img {
   width: 100px;
-
-}
-.container-sm .jumbotron {
-  margin-top: 20px;
-
-}
-.container-sm .jumbotron button{
-  border: 1px;
-  border-radius:5px;
-  background-color: #4eec04;
-  color: white;
-}
-.container-sm table{
-  margin-top: 20px;
+  float: left;
+  margin-right: 20px;
 }
 
-.container-sm section{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 3px;
+.kanan {
+  float: right;
+  width: 50%;
 }
-
-@media (max-width: 767.98px) { .border-sm-start-none { border-left: none !important; } }
