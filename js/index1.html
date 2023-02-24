@@ -11,9 +11,26 @@
         box-sizing: border-box;
         font-family: Roboto-Thin;
       }
+      .navbar {
+        background-color: aqua;
+      }
+      .navbar li {
+        display: inline-block;
+        padding: 10px;
+      }
     </style>
   </head>
   <body>
+    <div class="container">
+      <div class="navbar">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">product</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="heroimg"></div>
       <div class="dataDiri">
         <form action="">
           <fieldset>
@@ -60,7 +77,8 @@
                 <td><label for="jk">Jenis Kelamin</label></td>
                 <td>:</td>
                 <td>
-                  <input type="radio" />Laki-laki <input type="radio" />Wanita
+                  <input type="radio" name="jeniskelamin" />Laki-laki
+                  <input type="radio" name="jeniskelamin" />Wanita
                 </td>
               </tr>
               <tr>
@@ -78,12 +96,14 @@
                 <td><input type="file" /></td>
               </tr>
               <tr>
-                <td><input type="submit" /></td>
                 <td></td>
                 <td></td>
+                <td><button type="submit">Kirim</button></td>
               </tr>
             </table>
           </fieldset>
         </form>
       </div>
+    </div>
+  </body>
 </html>
