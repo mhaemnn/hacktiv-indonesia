@@ -5,30 +5,23 @@
 * {
   font-family: Roboto-Thin;
 }
-.navbar {
-  box-shadow: 1px 1px 5px 1px gray;
+.jumbotron {
+  background-image: url(/img/3.jpg);
+  background-size: cover;
+  height: 400px;
+  margin-bottom: 20px;
 }
-.container {
-  padding: 30px;
-  box-shadow: 1px 1px 4px 2px gray;
-  width: auto;
-  height: 260px;
-  margin-top: 20px;
+.jumbotron img {
+  margin-top: -40px;
 }
-.kiri {
-  float: left;
-  width: 50%;
+.jumbotron h2,
+p {
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
-
-.kanan {
-  float: right;
-  width: 50%;
+.col img {
+  padding: 10px;
 }
-.kiri img {
-  width: 100px;
-  float: left;
-  margin-right: 20px;
+.col p {
+  text-shadow: 1px 1px 1px black;
 }
-/* .kanan table {
-  table-layout: auto;
-} */
