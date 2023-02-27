@@ -19,6 +19,10 @@
 .jumbotron {
   margin-top: 50px;
 }
+
+#intro {
+  margin-top: 100px;
+}
 @media screen and (max-width: 670px) {
   .parallax {
     min-height: 400px;
