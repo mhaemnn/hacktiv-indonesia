@@ -13,7 +13,7 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 500px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 @media screen and (max-width: 670px) {
