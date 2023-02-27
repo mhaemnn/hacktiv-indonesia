@@ -5,23 +5,15 @@
 * {
   font-family: Roboto-Thin;
 }
-.jumbotron {
-  background-image: url(/img/3.jpg);
+.parallax {
+  background-image: url(/img/6.jpg);
   background-size: cover;
-  height: 400px;
+  height: 500px;
   margin-bottom: 20px;
 }
-.jumbotron img {
-  margin-top: -40px;
-}
-.jumbotron h2,
-p {
-  color: white;
-  text-shadow: 1px 1px 1px black;
-}
-.col img {
-  padding: 10px;
-}
-.col p {
-  text-shadow: 1px 1px 1px black;
+
+@media screen and (max-width: 670px) {
+  .parallax {
+    min-height: 100px;
+  }
 }
