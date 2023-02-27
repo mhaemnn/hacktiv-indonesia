@@ -8,12 +8,15 @@
 .parallax {
   background-image: url(/img/6.jpg);
   background-size: cover;
-  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 670px) {
   .parallax {
-    min-height: 300px;
+    min-height: 400px;
   }
 }
