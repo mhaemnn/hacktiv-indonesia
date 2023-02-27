@@ -16,6 +16,9 @@
   /* margin-bottom: 20px; */
 }
 
+.jumbotron {
+  margin-top: 50px;
+}
 @media screen and (max-width: 670px) {
   .parallax {
     min-height: 400px;
