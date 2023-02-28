@@ -27,7 +27,7 @@
   margin-top: 100px;
 }
 
-/* responsiv */
+/* DESTOP VERSION */
 @media screen and (max-width: 670px) {
   .parallax {
     min-height: 400px;
