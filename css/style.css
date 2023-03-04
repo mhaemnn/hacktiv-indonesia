@@ -30,10 +30,13 @@
 
 /* porfolio img */
 .card {
+  display: flex;
   margin-top: 100px;
   padding: 20px;
 }
 .card img {
+  margin-right: 20px;
+  float: left;
   width: 100px;
 }
 
