@@ -18,30 +18,38 @@
   /* margin-bottom: 20px; */
 }
 
-/* jumbotron */
+/* blog -> jumbotron */
 .jumbotron {
   margin-top: 50px;
 }
-
-/* blog */
 #intro {
   margin-top: 100px;
 }
 
-/* porfolio img */
+/* porfolio */
 .card {
   margin-top: 100px;
-  padding: 20px;
-  display: flex;
+  padding: 20px 40px 20px 40px;
 }
-.kiri img {
+.kanan img {
   margin-right: 20px;
   width: 100px;
 }
-
+.kiri table {
+  margin-top: 35px;
+}
 /* DESTOP VERSION */
 @media screen and (max-width: 670px) {
   .parallax {
     min-height: 400px;
+  }
+
+  .card {
+    align-items: center;
+    font-size: 11pt;
+    margin: 80px auto;
+  }
+  .kanan {
+    margin-top: 20px;
   }
 }
