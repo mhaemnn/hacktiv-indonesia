@@ -30,14 +30,16 @@
 
 /* porfolio img */
 .card {
-  display: flex;
   margin-top: 100px;
   padding: 20px;
+  display: flex;
 }
-.card img {
+.kiri img {
   margin-right: 20px;
-  float: left;
   width: 100px;
+}
+.kiri {
+  align-items: center;
 }
 
 /* DESTOP VERSION */
