@@ -37,6 +37,8 @@
 }
 .kiri table {
   margin-top: 35px;
+  border-left: 1px solid black;
+  padding: 10px;
 }
 /* DESTOP VERSION */
 @media screen and (max-width: 670px) {
