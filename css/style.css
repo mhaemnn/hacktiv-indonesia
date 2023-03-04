@@ -28,6 +28,15 @@
   margin-top: 100px;
 }
 
+/* porfolio img */
+.card {
+  margin-top: 100px;
+  padding: 20px;
+}
+.card img {
+  width: 100px;
+}
+
 /* DESTOP VERSION */
 @media screen and (max-width: 670px) {
   .parallax {
