@@ -46,6 +46,14 @@
 .form {
   margin-top: 15px;
 }
+.form form p {
+  margin-bottom: -0px;
+}
+
+.form input {
+  width: 1043px;
+}
+
 /* DESTOP VERSION */
 @media screen and (max-width: 670px) {
   .parallax {
@@ -58,7 +66,15 @@
   .kanan {
     margin-top: 20px;
   }
+  .kiri {
+    border-left: none;
+    padding: 0;
+  }
+
   .form {
     margin-top: -60px;
+  }
+  .form input {
+    width: 278px;
   }
 }
