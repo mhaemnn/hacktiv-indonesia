@@ -35,10 +35,16 @@
   margin-right: 20px;
   width: 100px;
 }
+.kiri {
+  border-left: 1px solid black;
+  padding: 10px 15px;
+}
 .kiri table {
   margin-top: 35px;
-  border-left: 1px solid black;
-  padding: 10px;
+}
+
+.form {
+  margin-top: 15px;
 }
 /* DESTOP VERSION */
 @media screen and (max-width: 670px) {
@@ -51,5 +57,8 @@
   }
   .kanan {
     margin-top: 20px;
+  }
+  .form {
+    margin-top: -60px;
   }
 }
