@@ -1,7 +1,7 @@
 /* fonts local */
 @font-face {
   font-family: "Roboto-Thin";
-  src: url(/_assets/fonts/Roboto-Regular.ttf) format("truetype");
+  src: url(/assigment1/_assets/fonts/Roboto-Regular.ttf) format("truetype");
 }
 * {
   font-family: Roboto-Thin;
@@ -9,7 +9,7 @@
 
 /* parallax */
 .parallax {
-  background-image: url(/img/6.jpg);
+  background-image: url(/assigment1/_assets/img/6.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
