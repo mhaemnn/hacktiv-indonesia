@@ -1,4 +1,4 @@
-### Repository Assigment PT. Hacktiv Indonesia....
+### Assigement 1: Membuat Landing Page
 
 "Repositori ini berisi kumpulan tugas dan proyek yang saya harus selesaikan selama studi saya. Dengan membagikan pekerjaan saya di GitHub"
 
