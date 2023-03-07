@@ -31,7 +31,11 @@
   margin-top: 100px;
   padding: 20px 40px 20px 40px;
 }
+.kanan {
+  margin: 20px;
+}
 .kanan img {
+  float: left;
   margin-right: 20px;
   width: 100px;
 }
