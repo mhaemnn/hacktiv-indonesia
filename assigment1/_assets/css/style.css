@@ -4,7 +4,8 @@
   src: url(/assigment1/_assets/fonts/Roboto-Regular.ttf) format("truetype");
 }
 * {
-  font-family: Roboto-Thin;
+  font-family: Roboto-Thin, "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 /* parallax */
