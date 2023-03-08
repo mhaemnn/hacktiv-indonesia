@@ -5,7 +5,7 @@
 
 /* parallax */
 .parallax {
-  background-image: url(/assigment1/img/6.jpg);
+  background-image: url(file:///home/mhaemnn/Programs/hacktiv-indonesia/assigment1/img/6.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
