@@ -1,6 +1,6 @@
 ### Assigement 1: Membuat Landing Page
 
-1. "Kententuan: Ketika di klik link Portfolio harus bisa masuk ke halaman Portfolio"
+1. Kententuan: Ketika di klik link Portfolio harus bisa masuk ke halaman Portfolio
 2. Untuk menjalankan file index.html tidak bisa menggunakan localhost atau live server yang biasanya ada di extension `vscode`. lalu cara untuk menjalan-nya bisa langusng dari file explorer, berikut contohnya.
 
 ```vim
