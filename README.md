@@ -7,5 +7,3 @@
 ![destip](assigment1/img/kodeid.png)
 
 
-dfjksjfkasd f
-fjdf jdskafj 
