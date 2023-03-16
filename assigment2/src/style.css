@@ -2,3 +2,9 @@
 * {
   font-family: "Signika", sans-serif;
 }
+
+.container {
+  box-shadow: 1px 1px 2px #3f51b5;
+  margin-top: 80px;
+  width: auto;
+}
