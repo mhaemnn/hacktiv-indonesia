@@ -2,65 +2,11 @@
 * {
   font-family: "Signika", sans-serif;
 }
-
-.container img {
-  float: left;
-  margin-right: 10px;
-  width: 100px;
+body {
+  margin: 0;
 }
-/* porfolio */
-.card {
-  margin-top: 100px;
-  padding: 20px 40px 20px 40px;
-}
-.kanan {
-  margin: 20px;
-}
-.kanan img {
-  float: left;
-  margin-right: 20px;
-  width: 100px;
-}
-.kiri {
-  border-left: 1px solid black;
-  padding: 10px 15px;
-}
-.kiri table {
-  margin-top: 35px;
-}
-
-.form {
-  margin-top: 15px;
-}
-.form form p {
-  margin-bottom: -0px;
-}
-
-.form input {
-  width: 1043px;
-}
-
-/* DESTOP VERSION */
-@media only screen and (max-width: 767px) and (min-width: 481px) {
-  .parallax {
-    min-height: 400px;
-  }
-  .card {
-    font-size: 11pt;
-    margin: 80px auto;
-  }
-  .kanan {
-    margin-top: 20px;
-  }
-  .kiri {
-    border-left: none;
-    padding: 0;
-  }
-
-  .form {
-    margin-top: -60px;
-  }
-  .form input {
-    width: 278px;
-  }
+div #content {
+  margin-top: 210px;
+  padding: 15px 15px 2500px;
+  font-size: 30px;
 }
