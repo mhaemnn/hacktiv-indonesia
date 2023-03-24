@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <!-- link Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- link file css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <i id="btn-menu" class="fa-solid fa-bars"></i>
+      <div class="contanier">
+        <a href="" class="logo">muhaemin</a>
+        <div id="menu" class="nav-links">
+          <a class="active" href="#">Home</a>
+          <a href="#">about</a>
+          <a href="#">Experience</a>
+          <a href="#">blog</a>
+          <a href="#">portfolio</a>
+          <div class="soc-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- add class active on click on btn menu -->
+
+    <script>
+      let btnMenu = document.getElementById("btn-menu");
+      let menu = document.getElementById("menu");
+
+      btnMenu.onclick = () => {
+        btnMenu.classList.toggle("fa-times");
+        menu.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
