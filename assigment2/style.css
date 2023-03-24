@@ -54,9 +54,21 @@ body {
 #btn-menu {
   display: none;
 }
+section {
+  padding: 10px;
+  height: auto;
+  margin-top: 30px !important;
+  background-color: #04aa6d;
+  border: 1px solid #111;
+  width: 80%;
+  margin: auto;
+}
 
+.kanan img {
+  float: left;
+  width: 100px;
+}
 /* media */
-
 @media (max-width: 1000px) {
   .header .contanier {
     width: 100%;
