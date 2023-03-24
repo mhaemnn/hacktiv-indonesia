@@ -105,7 +105,7 @@ body {
   border: 1px solid transparent;
   border-radius: 5px;
   box-shadow: 4px 4px 8px 0 rgba(61, 30, 116, 0.2);
-  background-color: #0d6efd;
+  background-color: #04aa6d;
   color: white;
   padding: 10px 15px;
   text-align: center;
@@ -144,10 +144,37 @@ body {
 }
 
 .button2:hover {
-  background-color: #0d6efd;
+  background-color: #04aa6d;
   border: 1px solid transparent;
   cursor: pointer;
   color: white;
+}
+@media (max-width: 750px) {
+  .card {
+    max-width: 320px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 30px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .maincard {
+    max-width: 320px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .descriptioncard {
+    flex-direction: row;
+    width: 100px;
+  }
+
+  .profileimage {
+    width: 155px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
 }
 /* media */
 @media (max-width: 1000px) {
