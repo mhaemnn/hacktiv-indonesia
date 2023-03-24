@@ -54,19 +54,100 @@ body {
 #btn-menu {
   display: none;
 }
-section {
-  padding: 10px;
-  height: auto;
-  margin-top: 30px !important;
-  background-color: #04aa6d;
-  border: 1px solid #111;
-  width: 80%;
+/* PROFILE */
+.card {
+  max-width: 1100px;
   margin: auto;
+  margin-top: 40px;
+  padding: 30px 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.kanan img {
-  float: left;
-  width: 100px;
+.maincard {
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+}
+
+.profileimage {
+  width: 360px;
+  height: 160px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.descriptioncard {
+  width: 900px;
+  padding: 10px 20px;
+}
+
+.headingprofile {
+  margin-bottom: 0px;
+}
+
+.parafdesc {
+  margin-bottom: 20px;
+  margin-left: 1px;
+}
+
+.biodata {
+  border-left: 1px solid;
+  padding: 10px 15px;
+  width: 1000px;
+}
+
+.tdbio {
+  padding-left: 20px;
+}
+
+.button1 {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 0 rgba(61, 30, 116, 0.2);
+  background-color: #0d6efd;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 15px;
+  margin: 6px 0px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button1:hover {
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+  border-color: black;
+  color: black;
+}
+
+.button2 {
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 15px;
+  margin: 2px 2px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button2:hover {
+  background-color: #0d6efd;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: white;
 }
 /* media */
 @media (max-width: 1000px) {
