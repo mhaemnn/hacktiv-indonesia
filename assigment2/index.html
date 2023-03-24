@@ -1,53 +1,36 @@
 <!DOCTYPE html>
-<html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
   <head>
-    <title>assigment2</title>
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <!--<title>Navigation Bar With Scroll Every Section</title>-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div id="navbar">
-      <a href="#" id="logo">Hacktiv</a>
-      <div id="vabar-right">
-        <a href="#">About</a>
-        <a href="#">Experience</a>
-        <a href="#">Certification</a>
-        <a href="#">Portfolio</a>
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">CodingLab</a></div>
+        <ul class="menu">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Category">Category</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li><a href="#Feedback">Feedback</a></li>
+        </ul>
       </div>
+    </nav>
+    <section id="Home">Home Section</section>
+    <section id="About">About Section</section>
+    <section id="Category">Category Section</section>
+    <section id="Contact">Contact Section</section>
+    <section id="Feedback">Feedback Section</section>
+    <div class="button">
+      <a href="#Home"><i class="fas fa-arrow-up"></i></a>
     </div>
-    <div id="content">
-      <p>
-        <b
-          >This example demonstrates how to shrink a navigation bar when the
-          user starts to scroll the page.</b
-        >
-      </p>
-      <p>Scroll down this frame to see the effect!</p>
-      <p>Scroll to the top to remove the effect.</p>
-      <p>
-        <b>Note:</b> We have also made the navbar responsive, resize the browser
-        window to see the effect.
-      </p>
-      <p>
-        Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <script>
-      let prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-        let currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.querySelector(".navbar").classList.remove("hidden");
-        } else {
-          document.querySelector(".navbar").classList.add("hidden");
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    </script>
   </body>
 </html>
