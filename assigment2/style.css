@@ -163,7 +163,9 @@ body {
   height: 30px;
 }
 
-/* media */
+/* ----------------------
+  version mobile
+------------------------- */
 @media (max-width: 1000px) {
   .header .contanier {
     width: 100%;

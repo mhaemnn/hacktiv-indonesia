@@ -1,15 +1,8 @@
-// header scticky
-window.onscroll = function () {
-  myFunction();
+let btnMenu = document.getElementById("btn-menu");
+let menu = document.getElementById("menu");
+
+btnMenu.onclick = () => {
+  btnMenu.classList.toggle("fa-times");
+  menu.classList.toggle("active");
 };
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+toggleSwitch.addEventListener("change", switchTheme, false);
