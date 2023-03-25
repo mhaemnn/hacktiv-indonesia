@@ -5,27 +5,14 @@ btnMenu.onclick = () => {
   btnMenu.classList.toggle("fa-times");
   menu.classList.toggle("active");
 };
-
-// dark mode
-const toggleSwitch = document.querySelector('input[type="checkbox"]');
-const currentTheme = localStorage.getItem("theme");
-
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
-
-  if (currentTheme === "dark") {
-    toggleSwitch.checked = true;
-  }
-}
-
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("theme", "light");
-  }
-}
-
 toggleSwitch.addEventListener("change", switchTheme, false);
+
+// addEvenLisner
+function toggleForm() {
+  var form = document.getElementById("form");
+  if (form.style.display === "none") {
+    form.style.display = "block";
+  } else {
+    form.style.display = "none";
+  }
+}
