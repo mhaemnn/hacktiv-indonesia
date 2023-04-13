@@ -8,6 +8,7 @@
 body {
   height: 100vh;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
@@ -41,18 +42,35 @@ body {
   padding: 2%;
   box-shadow: 0px 10px 6px -8px rgba(0, 0, 0, 0.75);
 }
+.container h1 {
+  text-align: center;
+}
+
+.btn {
+  margin: 15px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  color: white;
+  background: #32b336;
+}
+input {
+  margin: 10px;
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: inset 12px 12px 12px #cbced1, inset -12px -12px 12px white;
+  font-size: 20px;
+  text-align: center;
+}
 .board {
   column-count: 3;
   column-gap: 1rem;
 }
-.container h2 {
-  margin: 0 0 30px;
-  text-align: center;
-}
-img#flag {
-  height: 20px;
-  width: 20px;
-}
+
 .card {
   width: 84%;
   background: #ccc;

@@ -1,21 +1,3 @@
-fetch("https://corona.lmao.ninja/v2/countries/ID")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    console.log(data);
-    document.getElementById("country").innerHTML = data.country;
-    document.getElementById("active").innerHTML = data.active.toLocaleString();
-    document.getElementById("cases").innerHTML = data.cases.toLocaleString();
-    document.getElementById("critical").innerHTML =
-      data.critical.toLocaleString();
-    document.getElementById("death").innerHTML = data.deaths.toLocaleString();
-    document.getElementById("recovered").innerHTML =
-      data.recovered.toLocaleString();
-    document.getElementById("tests").innerHTML = data.tests.toLocaleString();
-    document.getElementById("flag").src = data.countryInfo.flag;
-  });
-
 particlesJS("particles-js", {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -88,3 +70,37 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
+
+const btn = document.querySelector(".btn");
+const input = document.querySelector(".inputElement");
+
+btn.addEventListener("click", getData);
+
+function getData() {
+  var country = input.value;
+  if (!country) {
+    alert("Please enter a valid country name!");
+    return;
+  }
+
+  fetch(`https://covid-193.p.rapidapi.com/statistics?country=${country}`, {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Host": "covid-193.p.rapidapi.com",
+      "X-RapidAPI-Key": "2b435e5a88msh8a87ead5f7e115dp1d80c3jsn1346ee88e354",
+    },
+  })
+    .then((response) => response.json())
+    .then((json) => {
+      if (!json.response || !json.response[0]) {
+        alert("No data found for the given country!");
+        return;
+      }
+      var data = json.response[0];
+      document.querySelector("#active").innerHTML = data.cases.active;
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("Failed to fetch data. Please try again later.");
+    });
+}
