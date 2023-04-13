@@ -1,1 +1,3 @@
-![destop](/images/covid%20tracker.png)
+![destop][def]
+
+[def]: /images/covid%20tracker.png
