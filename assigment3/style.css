@@ -109,17 +109,3 @@ input {
 .card i {
   font-size: 3rem;
 }
-
-@media screen and (max-width: 768px) {
-  .board {
-    column-count: 2;
-  }
-  .card span {
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .board {
-    column-count: 1;
-  }
-}
