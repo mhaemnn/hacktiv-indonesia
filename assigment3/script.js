@@ -1,3 +1,29 @@
+const inputElement = document.querySelector(".inputElement");
+const btn = document.querySelector(".btn");
+const activeCases = document.querySelector("#active");
+const totalCases = document.querySelector("#cases");
+const totalCritical = document.querySelector("#critical");
+const totalDeaths = document.querySelector("#death");
+const recovered = document.querySelector("#recovered");
+const tests = document.querySelector("#tests");
+
+btn.addEventListener("click", () => {
+  const country = inputElement.value.trim().toLowerCase();
+  fetch(`https://disease.sh/v3/covid-19/countries/${country}`)
+    .then((response) => response.json())
+    .then((data) => {
+      activeCases.textContent = data.active;
+      totalCases.textContent = data.cases;
+      totalCritical.textContent = data.critical;
+      totalDeaths.textContent = data.death;
+      recovered.textContent = data.recovered;
+      tests.textContent = data.tests;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+});
+
 particlesJS("particles-js", {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -70,37 +96,3 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
-
-const btn = document.querySelector(".btn");
-const input = document.querySelector(".inputElement");
-
-btn.addEventListener("click", getData);
-
-function getData() {
-  var country = input.value;
-  if (!country) {
-    alert("Please enter a valid country name!");
-    return;
-  }
-
-  fetch(`https://covid-193.p.rapidapi.com/statistics?country=${country}`, {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Host": "covid-193.p.rapidapi.com",
-      "X-RapidAPI-Key": "2b435e5a88msh8a87ead5f7e115dp1d80c3jsn1346ee88e354",
-    },
-  })
-    .then((response) => response.json())
-    .then((json) => {
-      if (!json.response || !json.response[0]) {
-        alert("No data found for the given country!");
-        return;
-      }
-      var data = json.response[0];
-      document.querySelector("#active").innerHTML = data.cases.active;
-    })
-    .catch((error) => {
-      console.log(error);
-      alert("Failed to fetch data. Please try again later.");
-    });
-}
