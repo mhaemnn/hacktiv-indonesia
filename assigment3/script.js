@@ -15,7 +15,7 @@ btn.addEventListener("click", () => {
       activeCases.textContent = data.active;
       totalCases.textContent = data.cases;
       totalCritical.textContent = data.critical;
-      totalDeaths.textContent = data.death;
+      totalDeaths.textContent = data.deaths;
       recovered.textContent = data.recovered;
       tests.textContent = data.tests;
     })
