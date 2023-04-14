@@ -1,3 +1,3 @@
-![destop][def]
+![covidTracker][def]
 
 [def]: /images/covidTracker.png
